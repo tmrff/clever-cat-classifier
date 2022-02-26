@@ -1,0 +1,44 @@
+disabled_rules: # rule identifiers to exclude from running
+  - identifier_name
+  - line_length
+  - todo
+  - multiple_closures_with_trailing_closure
+  - large_tuple
+  - nesting
+  - type_name
+  - inclusive_language
+opt_in_rules: # some rules are only opt-in
+  - yoda_condition
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+  - Carthage
+  - Pods
+  - ThirdParty
+  - DerivedData
+
+type_body_length:
+  warning: 1000
+  error: 5000
+function_body_length:
+  warning: 350
+  error: 500
+file_length:
+  warning: 1500
+  error: 2000
+force_cast: warning
+identifier_name:
+  min_length:
+    warning: 1
+  max_length:
+    warning: 60
+  allowed_symbols:
+    - "_"
+cyclomatic_complexity:
+  warning: 100
+  error: 1000
+force_try: warning
+trailing_whitespace:
+  ignores_empty_lines: true
+function_parameter_count:
+  warning: 11
+  error: 15
+

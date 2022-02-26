@@ -107,6 +107,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 79F7791C27C4A68500D730B6 /* Build configuration list for PBXNativeTarget "CleverCatClassifier" */;
 			buildPhases = (
+				7921D1AF27CACEA90043E4DE /* Run Swiftlint */,
 				79F7790427C4A68000D730B6 /* Sources */,
 				79F7790527C4A68000D730B6 /* Frameworks */,
 				79F7790627C4A68000D730B6 /* Resources */,
@@ -165,6 +166,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7921D1AF27CACEA90043E4DE /* Run Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Swiftlint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\n\nif which swiftlint >/dev/null; then\n  swiftlint lint --config swiftlint.yml\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		79F7790427C4A68000D730B6 /* Sources */ = {
