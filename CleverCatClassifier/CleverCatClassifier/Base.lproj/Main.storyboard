@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="H2U-pY-yMb">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -51,7 +52,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="28R-Dt-Euy">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="camera" catalog="system" id="pXa-jr-PyM"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="pXa-jr-PyM"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -64,6 +65,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="H2U-pY-yMb" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="DDy-Jr-Vd6">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -76,7 +78,7 @@
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="78.348214285714278"/>
         </scene>
-        <!--Item-->
+        <!--Live Capture-->
         <scene sceneID="9o7-g2-XzJ">
             <objects>
                 <viewController id="B7D-DQ-hoG" customClass="LiveImageViewController" customModule="CleverCatClassifier" customModuleProvider="target" sceneMemberID="viewController">
@@ -180,17 +182,17 @@
                             <constraint firstItem="uLh-rn-TfJ" firstAttribute="leading" secondItem="9Qb-X8-FjY" secondAttribute="leading" id="ylb-t5-ypD"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="vmy-6S-Goy"/>
+                    <tabBarItem key="tabBarItem" title="Live Capture" image="camera" catalog="system" id="vmy-6S-Goy"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A6f-y5-zf1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="929" y="-609"/>
         </scene>
-        <!--Item-->
+        <!--Still Image-->
         <scene sceneID="udm-ml-LXQ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="X28-ZE-INE" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="N1x-Gp-HDz"/>
+                    <tabBarItem key="tabBarItem" title="Still Image" image="photo" catalog="system" id="N1x-Gp-HDz"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="KT7-P2-jE4">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
